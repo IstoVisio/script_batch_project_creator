@@ -153,7 +153,7 @@ class Application(tk.Frame):
 		with open('config.ini', 'w') as f:
 			f.writelines(lines)
 			
-def main():
+def main(args):
 	print("Batch Project Creator, by Michael Morehead")
 	print("Accepts a folder containing folders of images")
 	print("Creates a syGlass Project for each subfolder, with the folder name as the Project name.")
@@ -163,8 +163,5 @@ def main():
 	root = tk.Tk()
 	ex = Application(root)
 	root.mainloop()
-
-if __name__ == '__main__':
-	main()
 	
 
